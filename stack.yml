@@ -7,13 +7,19 @@ functions:
     lang: python
     handler: ./fn-a
     image: fn-a
+    environment:
+      write_debug: true
 
   fn-b:
     lang: python
     handler: ./fn-b
     image: fn-b
+    environment:
+      write_debug: true
 
   service1:
     lang: python
     handler: ./service1
     image: service1
+    environment:
+      write_debug: true
